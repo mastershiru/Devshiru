@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Devshiru</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="DS.png" type="image/x-icon">
+
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
+    .section {
+        height: 70vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .item {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .hi-shiru {
+        font-size: 24px;
+    }
+
+    .item p {
+        text-align: justify;
+    }
+
+    .item h2 {
+        text-align: left;
+    }
+
+    @media (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
+
+        .item {
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .grid-container {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-right: 2px solid transparent;
+            }
+        }
+
+        .typewriter-text {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(30, end) infinite, blink 1s infinite step-end;
+            border-right: 2px solid #000; 
+        }
+</style>
+
+
+<body>
+    <nav>
+        <a class="nav-logo" href="index.html">Devshiru</a>
+
+        <div class="nav-links">
+            <ul>
+                <li style="margin-top: 15px;"><a href="index.html">home</a></li>
+                <li style="margin-top: 15px;"><a href="about.html">about</a></li>
+                <li style="margin-top: 15px;"><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="section">
+        <div class="grid-container">
+            <div class="item">
+                <h2 class="hi-shiru" id="hi-shiru"> Hi, I'm Devshiru <br> <i style="font-weight: 100; font-size: medium;">Web Developer </i></h2>
+                <p style="text-align: justify;">My name is Renz Vincent Valencia. I'm an Information Technology (IT)
+                    student. I'm also passionate about photography.</p>
+            </div>
+    
+            <div class="item" id="typewriter-text" >
+                <h1 style="font-family: 'Montserrat', sans-serif; font-size: 5vw; ">Devshiru.<span id="cursor"></span></h1>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
